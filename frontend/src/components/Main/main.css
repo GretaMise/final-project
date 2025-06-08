@@ -1,0 +1,67 @@
+
+
+.main-details-container {
+  background-color: rgb(244, 222, 183);
+  padding: 40px;
+  text-align: center;
+}
+
+.main-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.introduction-container {
+  margin-bottom: 30px;
+}
+
+.introduction-container h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.introduction-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.main-container-2 {
+  margin: 20px 0;
+}
+
+.main-container-2 h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.gift-button {
+  background-color: #5d3b03;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s;
+}
+
+.gift-button:hover {
+  background-color: #9f602a;
+}
+
+@media (max-width: 768px) {
+  .introduction-container h1 {
+    font-size: 2rem;
+  }
+
+  .introduction-container p {
+    font-size: 1rem;
+  }
+
+  .gift-button {
+    width: 100%;
+  }
+}

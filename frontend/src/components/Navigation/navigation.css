@@ -1,0 +1,114 @@
+.navigation {
+  background-color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  border-bottom: 1px solid grey;
+}
+
+.navigation-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.navigation-logo span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.navigation a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #5d532f, rgb(192, 146, 68));
+  transition: width 0.2s ease-in-out;
+}
+
+.login {
+  border: 2px solid black;
+  background-color: rgb(244, 222, 183);
+}
+
+.login:hover {
+  color: #050410;
+}
+
+.navigation img {
+  height: 30px;
+  padding-left: 5px;
+}
+
+.navigation a:hover {
+  color: #5d532f;
+}
+
+.navigation a:hover::after {
+  width: 80%;
+}
+
+.navigation .active::after {
+  width: 80%;
+}
+.logout-btn {
+  background: none;
+  color: black;
+  background-color: rgb(220, 193, 148);
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    padding: 1rem;
+  }
+
+  .navigation ul {
+    gap: 1rem;
+  }
+
+  .navigation a {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

@@ -1,0 +1,102 @@
+.gift-modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  color: #374151;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #6b7280;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: #111827;
+}
+
+h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.form-gift-add-edit {
+  margin-bottom: 1.5rem;
+}
+
+.form-gift-add-edit label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.form-gift-add-edit input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #111827;
+  transition: border-color 0.3s ease;
+}
+
+.form-gift-add-edit input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+.button {
+  background-color: rgb(214, 166, 83);
+  color: #ffffff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: rgb(214, 166, 83);
+  transform: scale(1.03);
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
